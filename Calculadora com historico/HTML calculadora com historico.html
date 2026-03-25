@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Calculadora com historico</title>
+</head>
+<body>
+
+    <h2>Calculadora</h2>
+
+    <form>
+        <label for="num1">Primeiro número:</label><br>
+        <input type="number" id="num1" placeholder="2"><br><br>
+
+        <label for="num2">Segundo número:</label><br>
+        <input type="number" id="num2" placeholder="3"><br><br>
+
+        <button type="button" onclick="calcular('+')">Somar</button>
+        <button type="button" onclick="calcular('-')">Subtrair</button>
+        <button type="button" onclick="calcular('*')">Multiplicar</button>
+        <button type="button" onclick="calcular('/')">Dividir</button>
+
+        <h3>Resultado: <span id="resultado">0</span></h3>
+    </form>
+
+    <hr>
+    <h3>Histórico</h3>
+    <ul id="listaHistorico"></ul>
+
+    <script src="JS calculadora com historico.js"></script>
+
+</body>
+</html>
